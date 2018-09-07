@@ -9,10 +9,10 @@
   citestyle=numeric-comp,
   sortcites=true]{biblatex}
 \usepackage[pdftex,
-  pdfauthor={},
-  pdftitle={},
-  pdfsubject={},
-  pdfkeywords={},
+  pdfauthor={Name},
+  pdftitle={Title},
+  pdfsubject={Computer Science},
+  pdfkeywords={Parallel},
   pdfcreator={latexmk}]{hyperref}
 
 % import references
@@ -25,14 +25,14 @@
 \makeatother
 
 % Title
-\title{}
+\title{Title}
 
 % Author(s)
-\author{\IEEEauthorblockN{Andreas Isnes Nilsen}
+\author{\IEEEauthorblockN{Name}
 \IEEEauthorblockA{
 UiT The Arctic University of Norway\\
 Department of Computer Science\\
-Email: andreas.i.nilsen@uit.no}}
+Email: xxxXXX@post.uit.no}}
 % \and
 % \IEEEauthorblockN{name}
 % \IEEEauthorblockA{
@@ -48,7 +48,39 @@ Email: andreas.i.nilsen@uit.no}}
 
 \begin{document}
 \maketitle
+\begin{abstract}
+  This is a scientific paper.
+\end{abstract}
+\section*{Introduction}
+\textbf{Introduction from \cite{Dijkstra} Paper}\\
+Given in this paper is a solution to a problem for which,
+to the knowledge of the author, has been an open question
+since at least 1962, irrespective of the solvability. The
+paper consists of three parts: the problem, the solution,
+and the proof. Although the setting of the problem might
+seem somewhat academic at first, the author trusts that
+anyone familiar with the logical problems that arise in
+computer coupling will appreciate the significance of the
+fact that this problem indeed can be solved.\cite{Dijkstra}
+\section*{Design}
+\textbf{Text fetched from \cite{Usgvs} web page}\\
+The Data Grapher can plot one or two time-series datasets from a single site, either as a time-series graph or an XY graph. Here is an example of a time-series graph of oxygen percent saturation and water temperature from a site in Oregon:\cite{Usgvs}
+\begin{figure}[h]
+  % \textwith is the width of the whole A4 sheet, and since we use double column we need to scale the image down.
+  \includegraphics[width=0.5\textwidth]{example.png}
+  \caption{\href{https://or.water.usgs.gov/grapher/tutorial/examples.html}{link here}}
+\end{figure}
 
-% uncomment to print bibliography
-%\printbibliography
+\section*{Discussion}
+\input{discussion.tex}
+\section*{Experimental setup}
+\input{sections/experimental_setup.tex}
+\section*{Conclusion}
+ $f(x) = 2x + 4$ \\
+$$f(x) = 2x + 4$$\\
+\section*{Evaluation}
+
+
+% Print bibliography
+\printbibliography
 \end{document}

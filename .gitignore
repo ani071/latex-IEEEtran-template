@@ -13,3 +13,4 @@ Blacklist everything
 !IEEEtran.cls
 !references.bib
 !README.md
+!Makefile
