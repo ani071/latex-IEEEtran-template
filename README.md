@@ -7,16 +7,12 @@ Useful resources
 Make sure following softwares are installed:
 apt-get
 ```
-sudo apt-get install texlive-full
-sudo apt-get install biber
-sudo apt-get install rubber
+apt-get install texlive-full biber rubber
 ```
 
 pacman
 ```
-sudo pacman -S texlive-most
-sudo pacman -S biber
-sudo pacman -S rubber
+pacman -S texlive-most biber rubber
 ```
 
 ## Compile and Clean
